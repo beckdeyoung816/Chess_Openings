@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Chess Openings</title>
+</head>
+<body>
+    <h1>Chess Openings Lab</h1>
+    <div class="app-container">
+        <div>
+            <select id = "opening-options">
+                <option value = "scotch">The Scotch</option>
+                <option value = "vienna">The Vienna</option>
+                <option value = "kings-indian">Kings Indian Attack</option>
+            </select>
+        </div>
+        <div>
+            <button id="notation-button"; onclick="showNotationContent()">Show Notation</button>
+            <button id="clear-button"; onclick="clearNotationContent()">Clear Notation</button>
+            <button id="Study"; onclick="study()">Study Opening</button>
+          </div>
+        <div>
+            <ol id="notation-list">
+            </ol>
+            <ol id="study-list">    
+                
+            </ol>
+        </div>
+
+        <div class = "chessboard"; id="board">
+
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
