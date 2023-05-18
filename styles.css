@@ -13,6 +13,15 @@
     flex-flow: row wrap;
   } */
 
+
+.input-move {
+    display: none;
+}
+
+#study-list {
+    display: none;
+}
+
 .chessboard {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

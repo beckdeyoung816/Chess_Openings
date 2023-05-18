@@ -31,6 +31,73 @@ const clearNotationContent = () => {
     notationList.innerHTML = '';
 }
 
+const study = () => {
+    const openingType = document.getElementById('opening-options').value;
+    const notation = opening(openingType);
+
+    const studyList = document.getElementById('study-list');
+
+    
+}
+
+// async function study(){
+//     const openingType = document.getElementById('opening-options').value;
+//     const notation = opening(openingType);
+    
+//     const study_list = document.getElementById('study-list');
+
+//     // Loop through the notation array and create an input field for each move 
+//     // Only iterate once the previous move has been guessed correctly
+//     for (let i = 0; i < notation.length; i++) {
+
+//         // Create input text field for guessing the next move
+//         const input_guess = document.createElement('input');
+//         input_guess.type = 'text';
+//         input_guess.className = 'guess'
+//         input_guess.id = 'guess';
+//         input_guess.placeholder = 'Enter your guess';
+//         // Display the input field
+//         study_list.appendChild(input_guess);
+
+//         // Create a button to check the guess
+//         const check_button = document.createElement('button');
+//         check_button.id = 'check-button';
+//         check_button.innerHTML = 'Check';
+//         // Display the button
+//         study_list.appendChild(check_button);
+
+//         // On button click, check the guess
+//         // If the guess is correct, display the text as green
+//         // If the guess is incorrect, display the text as red and show the correct move next to it
+//         check_button.addEventListener('click', () => {
+//             const guess = document.getElementById('guess-${i}').value;
+//             const answer = notation[i];
+//             checkGuess(guess, answer);
+//         });
+        
+
+//         // wait for the above to be completed before moving to the next iteration
+//         await new Promise(resolve => {
+//             const button = document.getElementById('checkButton');
+//             button.addEventListener('click', resolve, { once: true });
+//             });
+
+
+//         // Create a button to show the next move
+//         const show_button = document.createElement('button');
+//         show_button.id = 'show-button';
+//         show_button.innerHTML = 'Next Move';
+//         // Display the button
+//         study_list.appendChild(show_button);
+//             // Wait for button click before moving to the next iteration
+//         // await new Promise(resolve => {
+//         //     const button = document.getElementById('nextButton');
+//         //     button.addEventListener('click', resolve, { once: true });
+//         //     });
+
+//     }
+// }
+
 const checkGuess = (guess, answer) =>{
     // If the guess is correct, display the text as green
     // If the guess is incorrect, display the text as red and show the correct move next to it
