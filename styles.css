@@ -14,13 +14,37 @@
   } */
 
 
-.input-move {
+/* .input-move {
     display: none;
-}
+} */
 
 #study-list {
-    display: none;
+    /* display: none; */
+    list-style-type: none;
 }
+
+#check-button{
+  display: none;
+} 
+
+#study-list .no-show {
+  display: none; 
+}
+
+#study-list li :not(.no-show){
+  display: none;
+}
+
+/* #study-list li{
+  display: none;
+} */
+/* #study-list li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+} */
 
 .chessboard {
     display: grid;
