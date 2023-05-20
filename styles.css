@@ -19,6 +19,7 @@
 } */
 
 #study-list {
+  display:flex;
     /* display: none; */
     list-style-type: none;
 }
