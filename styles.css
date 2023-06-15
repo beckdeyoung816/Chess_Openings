@@ -1,40 +1,24 @@
-/* .chessboard {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 2px;
-    width: 400px;
-    height: 400px;
-  } */
-
-/* .chessboard {
-    display: flex;
-    height: 50em;
-    flex-flow: row wrap;
-  } */
-
-
-/* .input-move {
-    display: none;
-} */
-
 #study-list {
   display:flex;
     /* display: none; */
     list-style-type: none;
 }
 
+#study-list .input-move {
+  display: none; 
+}
+
 #check-button{
   display: none;
 } 
 
-#study-list .no-show {
-  display: none; 
-}
-
-#study-list li :not(.no-show){
+#clear-study-button{
   display: none;
-}
+} 
+
+/* #study-list li :not(.no-show){
+  display: none;
+} */
 
 /* #study-list li{
   display: none;

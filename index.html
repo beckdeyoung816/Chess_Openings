@@ -20,19 +20,20 @@
         <div>
             <button id="notation-button"; onclick="showNotationContent()">Show Notation</button>
             <button id="clear-button"; onclick="clearNotationContent()">Clear Notation</button>
-            <button id="Study"; onclick="study()">Study Opening</button>
+            <button id="Study"; onclick="study1()">Study Opening</button>
           </div>
         <div>
             <ol id="notation-list">
             </ol>
             <ol id="study-list">
-                    <li id="input_move1" class = 'input-move no-show'><input type="text" placeholder="Move 1"></li>
-                    <li id="input_move2" class = 'input-move no-show'><input type="text" placeholder="Move 2"></li>
-                    <li id="input_move3" class = 'input-move no-show'><input type="text" placeholder="Move 3"></li>
-                    <li id="input_move4" class = 'input-move no-show'><input type="text" placeholder="Move 4"></li>
-                    <li id="input_move5" class = 'input-move no-show'><input type="text" placeholder="Move 5"></li>
+                <input type="text" placeholder="Move 1" class = 'input-move' id = "input-move1">
+                <input type="text" placeholder="Move 2" class = 'input-move' id = "input-move2">
+                <input type="text" placeholder="Move 3" class = 'input-move' id = "input-move3">
+                <input type="text" placeholder="Move 4" class = 'input-move' id = "input-move4">
+                <input type="text" placeholder="Move 5" class = 'input-move' id = "input-move5">
             </ol>
             <button id="check-button" className="check-button">Check Guess</button>
+            <button id="clear-study-button" className="clear-study-button">Clear Study</button>
         </div>
 
         <div class = "chessboard"; id="board">
