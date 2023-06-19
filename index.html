@@ -20,20 +20,22 @@
         <div>
             <button id="notation-button"; onclick="showNotationContent()">Show Notation</button>
             <button id="clear-button"; onclick="clearNotationContent()">Clear Notation</button>
-            <button id="Study"; onclick="study1()">Study Opening</button>
+            <button id="Study"; onclick="showNextStudyMove()">Study Opening</button>
           </div>
         <div>
             <ol id="notation-list">
             </ol>
             <ol id="study-list">
-                <input type="text" placeholder="Move 1" class = 'input-move' id = "input-move1">
-                <input type="text" placeholder="Move 2" class = 'input-move' id = "input-move2">
-                <input type="text" placeholder="Move 3" class = 'input-move' id = "input-move3">
-                <input type="text" placeholder="Move 4" class = 'input-move' id = "input-move4">
-                <input type="text" placeholder="Move 5" class = 'input-move' id = "input-move5">
+                <div class ="move-container" id="move-container1"><input type="text" placeholder="Move 1" class = 'input-move' id = "input-move1"></div>
+                <div class ="move-container" id="move-container2"><input type="text" placeholder="Move 2" class = 'input-move' id = "input-move2"></div>
+                <div class ="move-container" id='move-container3'><input type="text" placeholder="Move 3" class = 'input-move' id = "input-move3"></div>
+                <div class ="move-container" id='move-container4'><input type="text" placeholder="Move 4" class = 'input-move' id = "input-move4"></div>
+                <div class ="move-container" id='move-container5'><input type="text" placeholder="Move 5" class = 'input-move' id = "input-move5"></div>
             </ol>
-            <button id="check-button" className="check-button">Check Guess</button>
-            <button id="clear-study-button" className="clear-study-button">Clear Study</button>
+            <div class="study-buttons">
+                <button id="check-button" className="check-button" onclick="checkGuess()">Check Guess</button>
+                <button id="clear-study-button" className="clear-study-button" onclick="clearStudy()">Clear Study</button>
+            </div>
         </div>
 
         <div class = "chessboard"; id="board">
